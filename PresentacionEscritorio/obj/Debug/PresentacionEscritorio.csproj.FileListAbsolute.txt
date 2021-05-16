@@ -1,0 +1,14 @@
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csprojAssemblyReference.cache
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.Properties.Resources.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.GenerateResource.cache
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe.config
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CopyComplete
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.exe
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUInicioSesion.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURegistroUsuario.resources

@@ -1,0 +1,11 @@
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\bin\Debug\ReglasDeNegocio.dll
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\bin\Debug\ReglasDeNegocio.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosBD.dll
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosLocales.dll
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosBD.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosLocales.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.csprojAssemblyReference.cache
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.csproj.CopyComplete
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.dll
+C:\Users\Miguel Mena\source\repos\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.pdb

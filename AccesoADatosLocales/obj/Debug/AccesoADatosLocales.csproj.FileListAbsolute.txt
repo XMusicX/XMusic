@@ -1,0 +1,6 @@
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosLocales.dll
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosLocales.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csprojAssemblyReference.cache
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.dll
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.pdb
