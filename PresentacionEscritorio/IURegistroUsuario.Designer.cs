@@ -33,7 +33,7 @@ namespace PresentacionEscritorio
             this.pnlRegistro = new System.Windows.Forms.Panel();
             this.lblIniciarSesion = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtConfirmarContraseña = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@ namespace PresentacionEscritorio
             this.pnlRegistro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlRegistro.Controls.Add(this.lblIniciarSesion);
             this.pnlRegistro.Controls.Add(this.btnRegistrar);
-            this.pnlRegistro.Controls.Add(this.textBox1);
+            this.pnlRegistro.Controls.Add(this.txtConfirmarContraseña);
             this.pnlRegistro.Controls.Add(this.label6);
             this.pnlRegistro.Controls.Add(this.txtContraseña);
             this.pnlRegistro.Controls.Add(this.label5);
@@ -93,14 +93,16 @@ namespace PresentacionEscritorio
             this.btnRegistrar.TabIndex = 11;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // textBox1
+            // txtConfirmarContraseña
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 418);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(394, 25);
-            this.textBox1.TabIndex = 10;
+            this.txtConfirmarContraseña.Location = new System.Drawing.Point(45, 418);
+            this.txtConfirmarContraseña.MaxLength = 5;
+            this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
+            this.txtConfirmarContraseña.PasswordChar = '*';
+            this.txtConfirmarContraseña.Size = new System.Drawing.Size(394, 25);
+            this.txtConfirmarContraseña.TabIndex = 10;
             // 
             // label6
             // 
@@ -108,13 +110,14 @@ namespace PresentacionEscritorio
             this.label6.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(42, 398);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 17);
+            this.label6.Size = new System.Drawing.Size(147, 17);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Confirmar contraseña";
+            this.label6.Text = "Confirmar contraseña *";
             // 
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(45, 341);
+            this.txtContraseña.MaxLength = 5;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(394, 25);
@@ -126,9 +129,9 @@ namespace PresentacionEscritorio
             this.label5.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(42, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 17);
+            this.label5.Size = new System.Drawing.Size(84, 17);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Contraseña";
+            this.label5.Text = "Contraseña *";
             // 
             // txtCorreoElectronico
             // 
@@ -143,9 +146,9 @@ namespace PresentacionEscritorio
             this.label4.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(42, 243);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 17);
+            this.label4.Size = new System.Drawing.Size(129, 17);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Correo electrónico";
+            this.label4.Text = "Correo electrónico *";
             // 
             // txtApellido
             // 
@@ -177,9 +180,9 @@ namespace PresentacionEscritorio
             this.label2.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
+            this.label2.Size = new System.Drawing.Size(66, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
+            this.label2.Text = "Nombre *";
             // 
             // label1
             // 
@@ -231,7 +234,7 @@ namespace PresentacionEscritorio
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtConfirmarContraseña;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label label5;

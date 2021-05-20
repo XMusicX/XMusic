@@ -12,3 +12,5 @@ C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\Presen
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.pdb
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUInicioSesion.resources
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURegistroUsuario.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.pdb

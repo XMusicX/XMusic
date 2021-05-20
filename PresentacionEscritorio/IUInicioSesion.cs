@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ReglasDeNegocio;
 
 namespace PresentacionEscritorio
 {
     public partial class IUInicioSesion : Form
     {
+        GestorInicioUsuarios GInicio = new GestorInicioUsuarios();       
         public IUInicioSesion()
         {
             InitializeComponent();
@@ -31,7 +33,19 @@ namespace PresentacionEscritorio
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();           
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (GInicio.BuscarCredencial(txtCorreoElectronico.Text, txtContraseña.Text))
+            {
+                MessageBox.Show("Inicio correcto");
+            }
+            else
+            {
+                MessageBox.Show("El correo o la contraseña son incorrectos");
+            }
         }
     }
 }

@@ -32,6 +32,7 @@ namespace PresentacionEscritorio
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IUInicioSesion));
             this.pnInicio = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.lblRecuperarContraseña = new System.Windows.Forms.Label();
             this.lblCrearCuenta = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace PresentacionEscritorio
             this.label1 = new System.Windows.Forms.Label();
             this.lblInicioSesion = new System.Windows.Forms.Label();
             this.imgLogo = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.pnInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,19 @@ namespace PresentacionEscritorio
             this.label3.Size = new System.Drawing.Size(61, 28);
             this.label3.TabIndex = 9;
             this.label3.Text = "Music";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnSalir.Image = global::PresentacionEscritorio.Properties.Resources.X2__1_;
+            this.btnSalir.Location = new System.Drawing.Point(3, 3);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(38, 40);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblRecuperarContraseña
             // 
@@ -113,11 +126,13 @@ namespace PresentacionEscritorio
             this.btnIngresar.TabIndex = 5;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(44, 266);
+            this.txtContraseña.MaxLength = 5;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(407, 32);
@@ -174,19 +189,6 @@ namespace PresentacionEscritorio
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogo.TabIndex = 1;
             this.imgLogo.TabStop = false;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnSalir.Image = global::PresentacionEscritorio.Properties.Resources.X2__1_;
-            this.btnSalir.Location = new System.Drawing.Point(3, 3);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(38, 40);
-            this.btnSalir.TabIndex = 8;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // IUInicioSesion
             // 
