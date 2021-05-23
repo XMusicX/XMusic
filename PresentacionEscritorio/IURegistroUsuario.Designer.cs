@@ -45,13 +45,16 @@ namespace PresentacionEscritorio
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.pnlRegistro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlRegistro
             // 
             this.pnlRegistro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlRegistro.Controls.Add(this.btnCerrar);
             this.pnlRegistro.Controls.Add(this.lblIniciarSesion);
             this.pnlRegistro.Controls.Add(this.btnRegistrar);
             this.pnlRegistro.Controls.Add(this.txtConfirmarContraseña);
@@ -204,6 +207,16 @@ namespace PresentacionEscritorio
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = global::PresentacionEscritorio.Properties.Resources.X2__1_;
+            this.btnCerrar.Location = new System.Drawing.Point(3, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(40, 40);
+            this.btnCerrar.TabIndex = 13;
+            this.btnCerrar.TabStop = false;
+            // 
             // IURegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -224,6 +237,7 @@ namespace PresentacionEscritorio
             this.pnlRegistro.ResumeLayout(false);
             this.pnlRegistro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,5 +259,6 @@ namespace PresentacionEscritorio
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblIniciarSesion;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

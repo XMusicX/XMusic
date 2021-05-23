@@ -29,12 +29,303 @@ namespace PresentacionEscritorio
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IUReproductor));
+            this.macCancion = new XComponent.SliderBar.MACTrackBar();
+            this.macVolumen = new XComponent.SliderBar.MACTrackBar();
+            this.lblNombreCancion = new System.Windows.Forms.Label();
+            this.lblAlbumCancion = new System.Windows.Forms.Label();
+            this.btnVolumen = new System.Windows.Forms.PictureBox();
+            this.picCancion = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCancionSiguiente = new System.Windows.Forms.PictureBox();
+            this.btnReproducir = new System.Windows.Forms.PictureBox();
+            this.btnCancionAnterior = new System.Windows.Forms.PictureBox();
+            this.lstCanciones = new System.Windows.Forms.ListBox();
+            this.btnSubirCancion = new System.Windows.Forms.Button();
+            this.btnPerfil = new System.Windows.Forms.Button();
+            this.btnPlaylist = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVolumen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCancion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancionSiguiente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReproducir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancionAnterior)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // macCancion
+            // 
+            this.macCancion.BackColor = System.Drawing.Color.Transparent;
+            this.macCancion.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.macCancion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.macCancion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.macCancion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(125)))), ((int)(((byte)(123)))));
+            this.macCancion.IndentHeight = 6;
+            this.macCancion.Location = new System.Drawing.Point(12, 535);
+            this.macCancion.Maximum = 100;
+            this.macCancion.Minimum = 0;
+            this.macCancion.Name = "macCancion";
+            this.macCancion.Size = new System.Drawing.Size(1240, 32);
+            this.macCancion.TabIndex = 0;
+            this.macCancion.TextTickStyle = System.Windows.Forms.TickStyle.None;
+            this.macCancion.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(146)))), ((int)(((byte)(148)))));
+            this.macCancion.TickHeight = 4;
+            this.macCancion.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.macCancion.TrackerColor = System.Drawing.Color.MediumBlue;
+            this.macCancion.TrackerSize = new System.Drawing.Size(20, 20);
+            this.macCancion.TrackLineColor = System.Drawing.Color.SlateGray;
+            this.macCancion.TrackLineHeight = 10;
+            this.macCancion.TrackLineSelectedColor = System.Drawing.Color.MediumBlue;
+            this.macCancion.Value = 0;
+            this.macCancion.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.macTrackBar1_ValueChanged);
+            // 
+            // macVolumen
+            // 
+            this.macVolumen.BackColor = System.Drawing.Color.Transparent;
+            this.macVolumen.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.macVolumen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.macVolumen.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.macVolumen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(125)))), ((int)(((byte)(123)))));
+            this.macVolumen.IndentHeight = 6;
+            this.macVolumen.Location = new System.Drawing.Point(977, 607);
+            this.macVolumen.Maximum = 100;
+            this.macVolumen.Minimum = 0;
+            this.macVolumen.Name = "macVolumen";
+            this.macVolumen.Size = new System.Drawing.Size(146, 28);
+            this.macVolumen.TabIndex = 1;
+            this.macVolumen.TextTickStyle = System.Windows.Forms.TickStyle.None;
+            this.macVolumen.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(146)))), ((int)(((byte)(148)))));
+            this.macVolumen.TickHeight = 4;
+            this.macVolumen.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.macVolumen.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.macVolumen.TrackerSize = new System.Drawing.Size(16, 16);
+            this.macVolumen.TrackLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
+            this.macVolumen.TrackLineHeight = 5;
+            this.macVolumen.TrackLineSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
+            this.macVolumen.Value = 0;
+            this.macVolumen.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.macVolumen_ValueChanged);
+            // 
+            // lblNombreCancion
+            // 
+            this.lblNombreCancion.AutoSize = true;
+            this.lblNombreCancion.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNombreCancion.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreCancion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblNombreCancion.Location = new System.Drawing.Point(480, 587);
+            this.lblNombreCancion.Name = "lblNombreCancion";
+            this.lblNombreCancion.Size = new System.Drawing.Size(287, 25);
+            this.lblNombreCancion.TabIndex = 8;
+            this.lblNombreCancion.Text = "Lujuria & Poesía - Nanpa Básico";
+            this.lblNombreCancion.Click += new System.EventHandler(this.lblNombreCancion_Click);
+            // 
+            // lblAlbumCancion
+            // 
+            this.lblAlbumCancion.AutoSize = true;
+            this.lblAlbumCancion.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlbumCancion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblAlbumCancion.Location = new System.Drawing.Point(489, 622);
+            this.lblAlbumCancion.Name = "lblAlbumCancion";
+            this.lblAlbumCancion.Size = new System.Drawing.Size(175, 25);
+            this.lblAlbumCancion.TabIndex = 9;
+            this.lblAlbumCancion.Text = "Album desconocido";
+            this.lblAlbumCancion.Click += new System.EventHandler(this.lblAlbumCancion_Click);
+            // 
+            // btnVolumen
+            // 
+            this.btnVolumen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolumen.Image = global::PresentacionEscritorio.Properties.Resources.Volumen;
+            this.btnVolumen.Location = new System.Drawing.Point(901, 587);
+            this.btnVolumen.Name = "btnVolumen";
+            this.btnVolumen.Size = new System.Drawing.Size(70, 70);
+            this.btnVolumen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnVolumen.TabIndex = 10;
+            this.btnVolumen.TabStop = false;
+            // 
+            // picCancion
+            // 
+            this.picCancion.Image = ((System.Drawing.Image)(resources.GetObject("picCancion.Image")));
+            this.picCancion.Location = new System.Drawing.Point(377, 569);
+            this.picCancion.Name = "picCancion";
+            this.picCancion.Size = new System.Drawing.Size(97, 100);
+            this.picCancion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCancion.TabIndex = 7;
+            this.picCancion.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PresentacionEscritorio.Properties.Resources.logoXmusic;
+            this.pictureBox2.Location = new System.Drawing.Point(1129, 569);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(112, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PresentacionEscritorio.Properties.Resources.btnRandom;
+            this.pictureBox1.Location = new System.Drawing.Point(268, 587);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnCancionSiguiente
+            // 
+            this.btnCancionSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancionSiguiente.Image = global::PresentacionEscritorio.Properties.Resources.btnSiguiente;
+            this.btnCancionSiguiente.Location = new System.Drawing.Point(183, 587);
+            this.btnCancionSiguiente.Name = "btnCancionSiguiente";
+            this.btnCancionSiguiente.Size = new System.Drawing.Size(70, 70);
+            this.btnCancionSiguiente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCancionSiguiente.TabIndex = 4;
+            this.btnCancionSiguiente.TabStop = false;
+            // 
+            // btnReproducir
+            // 
+            this.btnReproducir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReproducir.Image = global::PresentacionEscritorio.Properties.Resources.btnPlay;
+            this.btnReproducir.Location = new System.Drawing.Point(97, 587);
+            this.btnReproducir.Name = "btnReproducir";
+            this.btnReproducir.Size = new System.Drawing.Size(70, 70);
+            this.btnReproducir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnReproducir.TabIndex = 3;
+            this.btnReproducir.TabStop = false;
+            // 
+            // btnCancionAnterior
+            // 
+            this.btnCancionAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancionAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnCancionAnterior.Image")));
+            this.btnCancionAnterior.Location = new System.Drawing.Point(12, 587);
+            this.btnCancionAnterior.Name = "btnCancionAnterior";
+            this.btnCancionAnterior.Size = new System.Drawing.Size(70, 70);
+            this.btnCancionAnterior.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCancionAnterior.TabIndex = 2;
+            this.btnCancionAnterior.TabStop = false;
+            // 
+            // lstCanciones
+            // 
+            this.lstCanciones.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lstCanciones.FormattingEnabled = true;
+            this.lstCanciones.ItemHeight = 16;
+            this.lstCanciones.Location = new System.Drawing.Point(23, 12);
+            this.lstCanciones.Name = "lstCanciones";
+            this.lstCanciones.Size = new System.Drawing.Size(1032, 516);
+            this.lstCanciones.TabIndex = 11;
+            // 
+            // btnSubirCancion
+            // 
+            this.btnSubirCancion.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnSubirCancion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubirCancion.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubirCancion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSubirCancion.Location = new System.Drawing.Point(1090, 144);
+            this.btnSubirCancion.Name = "btnSubirCancion";
+            this.btnSubirCancion.Size = new System.Drawing.Size(151, 46);
+            this.btnSubirCancion.TabIndex = 12;
+            this.btnSubirCancion.Text = "Añadir Canción";
+            this.btnSubirCancion.UseVisualStyleBackColor = false;
+            this.btnSubirCancion.Click += new System.EventHandler(this.btnSubirCancion_Click);
+            // 
+            // btnPerfil
+            // 
+            this.btnPerfil.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPerfil.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerfil.ForeColor = System.Drawing.Color.White;
+            this.btnPerfil.Location = new System.Drawing.Point(1090, 344);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(151, 46);
+            this.btnPerfil.TabIndex = 13;
+            this.btnPerfil.Text = "Mi Perfil";
+            this.btnPerfil.UseVisualStyleBackColor = false;
+            // 
+            // btnPlaylist
+            // 
+            this.btnPlaylist.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlaylist.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaylist.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnPlaylist.Location = new System.Drawing.Point(1090, 241);
+            this.btnPlaylist.Name = "btnPlaylist";
+            this.btnPlaylist.Size = new System.Drawing.Size(151, 46);
+            this.btnPlaylist.TabIndex = 14;
+            this.btnPlaylist.Text = "Mis Playlist";
+            this.btnPlaylist.UseVisualStyleBackColor = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = global::PresentacionEscritorio.Properties.Resources.X2__1_;
+            this.btnCerrar.Location = new System.Drawing.Point(1201, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(40, 40);
+            this.btnCerrar.TabIndex = 15;
+            this.btnCerrar.TabStop = false;
+            // 
+            // IUReproductor
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnPlaylist);
+            this.Controls.Add(this.btnPerfil);
+            this.Controls.Add(this.btnSubirCancion);
+            this.Controls.Add(this.lstCanciones);
+            this.Controls.Add(this.btnVolumen);
+            this.Controls.Add(this.lblAlbumCancion);
+            this.Controls.Add(this.lblNombreCancion);
+            this.Controls.Add(this.picCancion);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnCancionSiguiente);
+            this.Controls.Add(this.btnReproducir);
+            this.Controls.Add(this.btnCancionAnterior);
+            this.Controls.Add(this.macVolumen);
+            this.Controls.Add(this.macCancion);
+            this.Font = new System.Drawing.Font("MV Boli", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "IUReproductor";
             this.Text = "IUReproductor";
+            ((System.ComponentModel.ISupportInitialize)(this.btnVolumen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCancion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancionSiguiente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReproducir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancionAnterior)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private XComponent.SliderBar.MACTrackBar macCancion;
+        private XComponent.SliderBar.MACTrackBar macVolumen;
+        private System.Windows.Forms.PictureBox btnCancionAnterior;
+        private System.Windows.Forms.PictureBox btnReproducir;
+        private System.Windows.Forms.PictureBox btnCancionSiguiente;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picCancion;
+        private System.Windows.Forms.Label lblNombreCancion;
+        private System.Windows.Forms.Label lblAlbumCancion;
+        private System.Windows.Forms.PictureBox btnVolumen;
+        private System.Windows.Forms.ListBox lstCanciones;
+        private System.Windows.Forms.Button btnSubirCancion;
+        private System.Windows.Forms.Button btnPerfil;
+        private System.Windows.Forms.Button btnPlaylist;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

@@ -16,5 +16,35 @@ namespace PresentacionEscritorio
         {
             InitializeComponent();
         }
+
+        private void macTrackBar1_ValueChanged(object sender, decimal value)
+        {
+
+        }
+
+        private void macVolumen_ValueChanged(object sender, decimal value)
+        {
+
+        }
+
+        private void lblNombreCancion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAlbumCancion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubirCancion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
