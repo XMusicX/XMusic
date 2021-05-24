@@ -36,5 +36,30 @@ namespace AccesoADatosBD
             ObjCn.Close();
             return dt;
         }
+
+        public void RecuperarContraseña(string correo, string contraseña, string token)
+        {
+            SqlCommand objCmd = new SqlCommand("uspEditarContraseña", ObjCn);
+            objCmd.Parameters.AddWithValue("@Correo", correo);
+            objCmd.Parameters.AddWithValue("@Contraseña", contraseña);
+            objCmd.Parameters.AddWithValue("@token", token);
+            ObjCn.Open();
+            SqlDataReader Dr = objCmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(Dr);
+            ObjCn.Close();
+        }
+
+        public void GuardarToken(string correo, string token)
+        {
+            SqlCommand objCmd = new SqlCommand("uspGenerarToken", ObjCn);
+            objCmd.Parameters.AddWithValue("@Correo", correo);
+            objCmd.Parameters.AddWithValue("@token", token);
+            ObjCn.Open();
+            SqlDataReader Dr = objCmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(Dr);
+            ObjCn.Close();
+        }
     }
 }

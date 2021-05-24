@@ -14,3 +14,23 @@ C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\Presen
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURegistroUsuario.resources
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.dll
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.pdb
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe.config
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.pdb
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\MACTrackBarLib.dll
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.dll
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\AccesoADatosBD.dll
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.pdb
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\bin\Debug\AccesoADatosBD.pdb
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csprojAssemblyReference.cache
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUActualizarCuenta.resources
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUInicioSesion.resources
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURegistroUsuario.resources
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUReproductor.resources
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.Properties.Resources.resources
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.GenerateResource.cache
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CoreCompileInputs.cache
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CopyComplete
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.exe
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.pdb
+D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURecuperarContraseña.resources

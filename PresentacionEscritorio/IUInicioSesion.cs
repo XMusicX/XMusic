@@ -47,5 +47,22 @@ namespace PresentacionEscritorio
                 MessageBox.Show("El correo o la contraseña son incorrectos");
             }
         }
+
+        private void lblRecuperarContraseña_Click(object sender, EventArgs e)
+        {
+            if (txtCorreoElectronico.Text.Equals(""))
+            {
+                MessageBox.Show("Debe ingresar un correo electrónico");
+            }
+            else
+            {
+                GestorRecuperacionContraseña gr = new GestorRecuperacionContraseña();
+                string msg = gr.GenerarToken(txtCorreoElectronico.Text);
+                MessageBox.Show(msg);
+                this.Hide();
+                IURecuperarContraseña IUgr = new IURecuperarContraseña();
+                IUgr.Show();
+            }
+        }
     }
 }

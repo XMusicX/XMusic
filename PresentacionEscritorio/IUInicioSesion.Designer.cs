@@ -100,6 +100,7 @@ namespace PresentacionEscritorio
             this.lblRecuperarContraseña.Size = new System.Drawing.Size(220, 25);
             this.lblRecuperarContraseña.TabIndex = 7;
             this.lblRecuperarContraseña.Text = "Recuperar contraseña";
+            this.lblRecuperarContraseña.Click += new System.EventHandler(this.lblRecuperarContraseña_Click);
             // 
             // lblCrearCuenta
             // 

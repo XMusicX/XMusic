@@ -44,6 +44,7 @@
     <Compile Include="GestorEncriptacionUsuarios.cs" />
     <Compile Include="GestorInicioUsuarios.cs" />
     <Compile Include="GestorListasReproduccion.cs" />
+    <Compile Include="GestorRecuperacionContraseña.cs" />
     <Compile Include="GestorRegistroArtista.cs" />
     <Compile Include="GestorReproduccion.cs" />
     <Compile Include="GestorSubirCanciones.cs" />

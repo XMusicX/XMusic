@@ -73,6 +73,12 @@
     <Compile Include="IUMenuListasReproduccion.Designer.cs">
       <DependentUpon>IUMenuListasReproduccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="IURecuperarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURecuperarContraseña.Designer.cs">
+      <DependentUpon>IURecuperarContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="IURegistroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IUInicioSesion.resx">
       <DependentUpon>IUInicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURecuperarContraseña.resx">
+      <DependentUpon>IURecuperarContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IURegistroUsuario.resx">
       <DependentUpon>IURegistroUsuario.cs</DependentUpon>
