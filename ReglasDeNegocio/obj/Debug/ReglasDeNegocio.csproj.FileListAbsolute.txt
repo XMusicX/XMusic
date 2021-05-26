@@ -20,3 +20,14 @@ D:\Universidad\Ingeniería del software\xmusic2\ReglasDeNegocio\obj\Debug\Reglas
 D:\Universidad\Ingeniería del software\xmusic2\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.csproj.CopyComplete
 D:\Universidad\Ingeniería del software\xmusic2\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.dll
 D:\Universidad\Ingeniería del software\xmusic2\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\bin\Debug\ReglasDeNegocio.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\bin\Debug\ReglasDeNegocio.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosBD.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosLocales.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosBD.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\bin\Debug\AccesoADatosLocales.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.csprojAssemblyReference.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.csproj.CopyComplete
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\ReglasDeNegocio\obj\Debug\ReglasDeNegocio.pdb

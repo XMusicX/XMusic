@@ -10,3 +10,9 @@ D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosBD\obj\Debug\AccesoA
 D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosBD\obj\Debug\AccesoADatosBD.csproj.CoreCompileInputs.cache
 D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosBD\obj\Debug\AccesoADatosBD.dll
 D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosBD\obj\Debug\AccesoADatosBD.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosBD\bin\Debug\AccesoADatosBD.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosBD\bin\Debug\AccesoADatosBD.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.csprojAssemblyReference.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.csproj.CoreCompileInputs.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.pdb

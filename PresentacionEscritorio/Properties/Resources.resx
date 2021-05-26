@@ -133,6 +133,9 @@
   <data name="btnPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Volumen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volumen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logoXmusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoXmusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,7 +148,10 @@
   <data name="btnAnterior" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnAnterior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Volumen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Volumen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnMute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnMute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNoAleatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnNoAleatorio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

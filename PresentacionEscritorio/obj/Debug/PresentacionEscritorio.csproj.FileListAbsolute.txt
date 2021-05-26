@@ -34,3 +34,28 @@ D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug
 D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.exe
 D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.pdb
 D:\Universidad\Ingeniería del software\xmusic2\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURecuperarContraseña.resources
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe.config
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\MACTrackBarLib.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\Interop.WMPLib.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csprojAssemblyReference.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\Interop.WMPLib.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.ResolveComReference.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUActualizarCuenta.resources
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUInicioSesion.resources
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURecuperarContraseña.resources
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURegistroUsuario.resources
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUReproductor.resources
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.Properties.Resources.resources
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.GenerateResource.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CoreCompileInputs.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CopyComplete
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.exe
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.pdb

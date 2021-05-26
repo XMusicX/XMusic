@@ -10,3 +10,9 @@ D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosLocales\obj\Debug\Ac
 D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CoreCompileInputs.cache
 D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.dll
 D:\Universidad\Ingeniería del software\xmusic2\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosLocales.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosLocales.pdb
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csprojAssemblyReference.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CoreCompileInputs.cache
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.dll
+C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.pdb

@@ -16,7 +16,7 @@ namespace PresentacionEscritorio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IUInicioSesion());
+            Application.Run(new IUReproductor());
         }
     }
 }

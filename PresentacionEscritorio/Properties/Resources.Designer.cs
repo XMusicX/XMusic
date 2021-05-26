@@ -73,6 +73,26 @@ namespace PresentacionEscritorio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnMute {
+            get {
+                object obj = ResourceManager.GetObject("btnMute", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnNoAleatorio {
+            get {
+                object obj = ResourceManager.GetObject("btnNoAleatorio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnPause {
             get {
                 object obj = ResourceManager.GetObject("btnPause", resourceCulture);
