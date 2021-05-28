@@ -59,3 +59,18 @@ C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\Prese
 C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CopyComplete
 C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.exe
 C:\Users\xXjja\OneDrive\Escritorio\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\MACTrackBarLib.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\Interop.WMPLib.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\Interop.WMPLib.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.ResolveComReference.cache
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUActualizarCuenta.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURecuperarContraseña.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUReproductor.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosLocales.dll
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosLocales.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUMiPerfil.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUListasReproduccion.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUMenuListasReproduccion.resources
+C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUSubirCanciones.resources

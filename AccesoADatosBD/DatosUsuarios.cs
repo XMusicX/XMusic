@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 namespace AccesoADatosBD
 {
     public class DatosUsuarios
     {
-        SqlConnection ObjCn = new SqlConnection(@"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=XMusic;Data Source=LAPTOP-DEJRMO8U\SQLEXPRESS");
+        SqlConnection ObjCn = new SqlConnection(ConfigurationManager.AppSettings["CADENA_CONEXION"]);
         public void RegistarUsuario(string nombre,string apellidos,string correo,string contraseña)
         {
             SqlCommand ObjCmd = new SqlCommand("uspRegistroUsuario", ObjCn);
@@ -59,6 +60,52 @@ namespace AccesoADatosBD
             SqlDataReader Dr = objCmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(Dr);
+            ObjCn.Close();
+        }
+
+        public void GuardarCancion(int idUsuario, string nombre,string ubicacion)
+        {
+            SqlCommand objCmd = new SqlCommand("uspRegistroCancion", ObjCn);
+            objCmd.CommandType = CommandType.StoredProcedure;
+            objCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            objCmd.Parameters.AddWithValue("@Nombre", nombre);
+            objCmd.Parameters.AddWithValue("@Ubicacion", ubicacion);
+            ObjCn.Open();
+            objCmd.ExecuteNonQuery();
+            ObjCn.Close();
+        }
+        public DataTable ConsultarCanciones(int idUsuario)
+        {
+            SqlCommand ObjCmd = new SqlCommand("uspConsultarCanciones", ObjCn);
+            ObjCmd.CommandType = CommandType.StoredProcedure;
+            ObjCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            ObjCn.Open();
+            SqlDataReader Dr = ObjCmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(Dr);
+            ObjCn.Close();
+            return dt;
+        }
+        public DataTable ConsultarPerfil(int idUsuario)
+        {
+            SqlCommand ObjCmd = new SqlCommand("uspConsultarPerfil", ObjCn);
+            ObjCmd.CommandType = CommandType.StoredProcedure;
+            ObjCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            ObjCn.Open();
+            SqlDataReader Dr = ObjCmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(Dr);
+            ObjCn.Close();
+            return dt;
+        }
+        public void ActualizarPefil(int idUsuario, string nombreArtistico)
+        {
+            SqlCommand objCmd = new SqlCommand("uspActualizarCuenta", ObjCn);
+            objCmd.CommandType = CommandType.StoredProcedure;
+            objCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            objCmd.Parameters.AddWithValue("@NombreArtistico", nombreArtistico);
+            ObjCn.Open();
+            objCmd.ExecuteNonQuery();
             ObjCn.Close();
         }
     }

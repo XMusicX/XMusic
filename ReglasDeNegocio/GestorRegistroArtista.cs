@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AccesoADatosBD;
+
 namespace ReglasDeNegocio
 {
-    class GestorRegistroArtista
+    public class GestorRegistroArtista
     {
-        
+        public void RegistrarArtista(int idUsuario, string nombreArtista)
+        {
+            DatosUsuarios GUsuario = new DatosUsuarios();
+            GUsuario.ActualizarPefil(idUsuario,nombreArtista);
+        }
     }
 }

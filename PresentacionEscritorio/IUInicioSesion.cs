@@ -40,7 +40,10 @@ namespace PresentacionEscritorio
         {
             if (GInicio.BuscarCredencial(txtCorreoElectronico.Text, txtContraseña.Text))
             {
-                MessageBox.Show("Inicio correcto");
+                IUReproductor IURep = new IUReproductor();
+                IURep.IdUsuario = GInicio.IdUsuario;
+                IURep.Visible = true;
+                this.Visible = false;
             }
             else
             {

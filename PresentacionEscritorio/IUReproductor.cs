@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ReglasDeNegocio;
 
 namespace PresentacionEscritorio
 {
@@ -16,8 +17,11 @@ namespace PresentacionEscritorio
         bool Random = false;
         bool Mute = false;
         int CancionAnterior;
-        string[] ArchivosMP3;
-        string[] RutasArchivosMP3;
+
+        List<string> ArchivosMP3;
+        List<string> RutasArchivosMP3;
+
+        public int IdUsuario;
         public IUReproductor()
         {
             InitializeComponent();
@@ -26,7 +30,6 @@ namespace PresentacionEscritorio
 
         private void macTrackBar1_ValueChanged(object sender, decimal value)
         {
-            Reproductor.Ctlcontrols.currentPosition = macCancion.Value;
             if (macCancion.Value == macCancion.Maximum)
             {
                 switch (Play)
@@ -76,28 +79,31 @@ namespace PresentacionEscritorio
         {
             OpenFileDialog CajaDeBusquedaDeArchivos = new OpenFileDialog();
             CajaDeBusquedaDeArchivos.Multiselect = true;
+            CajaDeBusquedaDeArchivos.Filter = "Mp3 Files|*.mp3*";
             if (CajaDeBusquedaDeArchivos.ShowDialog()== System.Windows.Forms.DialogResult.OK)
             {
-                ArchivosMP3 = CajaDeBusquedaDeArchivos.SafeFileNames;
-                RutasArchivosMP3 = CajaDeBusquedaDeArchivos.FileNames; 
-                foreach(var ArchivosMP3 in ArchivosMP3)
+                List<string> ArchivosMp3Nuevos = CajaDeBusquedaDeArchivos.SafeFileNames.ToList();
+                List<string> RutasMp3Nuevos = CajaDeBusquedaDeArchivos.FileNames.ToList();
+                ArchivosMP3.AddRange(ArchivosMp3Nuevos);
+                RutasArchivosMP3.AddRange(RutasMp3Nuevos); 
+                foreach(var ArchivosMP3 in ArchivosMp3Nuevos)
                 {
                     lstCanciones.Items.Add(ArchivosMP3);
                 }
                 Reproductor.URL = RutasArchivosMP3[0];
                 lstCanciones.SelectedIndex = 0;
                 btnReproducir.Image = Properties.Resources.btnPause;
-
+                GestorSubirCanciones GSubir = new GestorSubirCanciones();
+                GSubir.RegistrarCanciones(IdUsuario, ArchivosMp3Nuevos.ToArray(), RutasMp3Nuevos.ToArray());
             }
         }
 
         private void lstCanciones_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
-            lblNombreCancion.Text = ArchivosMP3[lstCanciones.SelectedIndex];
+            Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];            
+            lblNombreCancion.Text = ArchivosMP3[lstCanciones.SelectedIndex];        
             btnReproducir.Image = Properties.Resources.btnPause;
             Play = true;
-
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -234,6 +240,30 @@ namespace PresentacionEscritorio
                     Mute = true;
                     break;
             }
+        }
+
+        private void IUReproductor_Load(object sender, EventArgs e)
+        {
+            GestorReproduccion GRep = new GestorReproduccion();
+            List<string> NombresCancioes = new List<string>();
+            List<string> RutasCanciones = new List<string>();
+
+            NombresCancioes = GRep.ConsultarNombresCanciones(IdUsuario);
+            RutasCanciones = GRep.ConsultarRutasCanciones(IdUsuario);
+
+            foreach (string nombre in NombresCancioes)
+            {
+                lstCanciones.Items.Add(nombre);
+            }
+            ArchivosMP3 = NombresCancioes;
+            RutasArchivosMP3 = RutasCanciones;
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            IUMiPerfil MiPerfil = new IUMiPerfil();
+            MiPerfil.IdUsuario = IdUsuario;
+            MiPerfil.Visible = true;
         }
     }
 }

@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ReglasDeNegocio;
 
 namespace PresentacionEscritorio
 {
     public partial class IUActualizarCuenta : Form
     {
+        string NombreArtista;
+        public int IdUsuario;
         public IUActualizarCuenta()
         {
             InitializeComponent();
@@ -20,6 +23,25 @@ namespace PresentacionEscritorio
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+            if (txtNombreArtistico.Text == "")
+            {
+                MessageBox.Show("Ingrese el nombre del artista");
+            }
+            else 
+            {
+                GestorRegistroArtista GReg = new GestorRegistroArtista();
+                GReg.RegistrarArtista(IdUsuario, txtNombreArtistico.Text);                
+                this.Close();
+            }
+        }
+        
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

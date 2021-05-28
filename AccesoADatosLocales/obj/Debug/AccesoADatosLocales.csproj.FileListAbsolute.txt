@@ -16,3 +16,6 @@ C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoAD
 C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CoreCompileInputs.cache
 C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.dll
 C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosBD.dll
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosBD.pdb
+C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CopyComplete

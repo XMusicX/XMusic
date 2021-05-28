@@ -44,5 +44,11 @@
     <Compile Include="DatosMediaLocal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoADatosBD\AccesoADatosBD.csproj">
+      <Project>{17a6802e-ffe2-4833-9c8d-c143bc8f0563}</Project>
+      <Name>AccesoADatosBD</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

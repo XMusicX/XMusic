@@ -93,6 +93,7 @@ namespace PresentacionEscritorio
             // lblRecuperarContraseña
             // 
             this.lblRecuperarContraseña.AutoSize = true;
+            this.lblRecuperarContraseña.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRecuperarContraseña.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecuperarContraseña.ForeColor = System.Drawing.Color.AliceBlue;
             this.lblRecuperarContraseña.Location = new System.Drawing.Point(133, 474);

@@ -116,6 +116,7 @@ namespace PresentacionEscritorio
             this.lblNombreCancion.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreCancion.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblNombreCancion.Location = new System.Drawing.Point(358, 607);
+            this.lblNombreCancion.MaximumSize = new System.Drawing.Size(1000, 25);
             this.lblNombreCancion.Name = "lblNombreCancion";
             this.lblNombreCancion.Size = new System.Drawing.Size(30, 25);
             this.lblNombreCancion.TabIndex = 8;
@@ -129,9 +130,9 @@ namespace PresentacionEscritorio
             this.lstCanciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lstCanciones.FormattingEnabled = true;
             this.lstCanciones.ItemHeight = 31;
-            this.lstCanciones.Location = new System.Drawing.Point(23, 12);
+            this.lstCanciones.Location = new System.Drawing.Point(23, 43);
             this.lstCanciones.Name = "lstCanciones";
-            this.lstCanciones.Size = new System.Drawing.Size(1032, 500);
+            this.lstCanciones.Size = new System.Drawing.Size(1032, 469);
             this.lstCanciones.TabIndex = 11;
             this.lstCanciones.SelectedIndexChanged += new System.EventHandler(this.lstCanciones_SelectedIndexChanged);
             // 
@@ -161,6 +162,7 @@ namespace PresentacionEscritorio
             this.btnPerfil.TabIndex = 13;
             this.btnPerfil.Text = "Mi Perfil";
             this.btnPerfil.UseVisualStyleBackColor = false;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnPlaylist
             // 
@@ -301,7 +303,9 @@ namespace PresentacionEscritorio
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "IUReproductor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IUReproductor";
+            this.Load += new System.EventHandler(this.IUReproductor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAleatorio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();

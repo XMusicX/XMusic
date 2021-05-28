@@ -73,6 +73,12 @@
     <Compile Include="IUMenuListasReproduccion.Designer.cs">
       <DependentUpon>IUMenuListasReproduccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="IUMiPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUMiPerfil.Designer.cs">
+      <DependentUpon>IUMiPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="IURecuperarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,15 @@
     <EmbeddedResource Include="IUInicioSesion.resx">
       <DependentUpon>IUInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IUListasReproduccion.resx">
+      <DependentUpon>IUListasReproduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUMenuListasReproduccion.resx">
+      <DependentUpon>IUMenuListasReproduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUMiPerfil.resx">
+      <DependentUpon>IUMiPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IURecuperarContraseña.resx">
       <DependentUpon>IURecuperarContraseña.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IUReproductor.resx">
       <DependentUpon>IUReproductor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUSubirCanciones.resx">
+      <DependentUpon>IUSubirCanciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -192,6 +210,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnNoAleatorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atras.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

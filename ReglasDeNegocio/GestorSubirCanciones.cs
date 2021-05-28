@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using AccesoADatosLocales;
 
 namespace ReglasDeNegocio
 {
-    class GestorSubirCanciones
+    public class GestorSubirCanciones
     {
-        bool Play = false;
-        string[] archivosMP3;
-        string[] rutasArchivosMP3;
-        public void ReconocerCanciones()
+        DatosMediaLocal DMedia = new DatosMediaLocal();
+        
+        public void RegistrarCanciones(int idUsuario, string[] nombres, string[] rutas)
         {
-            
+            DMedia.ReconocerCanciones(idUsuario, nombres, rutas);
         }
     }
 }
