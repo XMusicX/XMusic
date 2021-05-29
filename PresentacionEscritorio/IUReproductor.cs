@@ -275,10 +275,9 @@ namespace PresentacionEscritorio
 
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
-            IUListasReproduccion IUListas = new IUListasReproduccion();
-            IUListas.Show();
+            IUListasReproduccion IUListas = new IUListasReproduccion();            
             IUListas.IdUsuario = IdUsuario;
-            IUListas.ActualizarListasPlayList();
+            IUListas.Show();
         }
     }
 }

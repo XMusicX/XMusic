@@ -15,8 +15,7 @@ namespace PresentacionEscritorio
     {
         public int IdUsuario;
         GestorListasReproduccion GListas = new GestorListasReproduccion();
-        List<string> playLists = new List<string>();
-        List<int> idPlayList = new List<int>();
+        List<ModeloPlayList> PlayLists = new List<ModeloPlayList>();
         public IUListasReproduccion()
         {
             InitializeComponent();
@@ -24,13 +23,9 @@ namespace PresentacionEscritorio
 
         private void btnCrearPlayList_Click(object sender, EventArgs e)
         {
-            txtNombrePlayList.Visible = true;
-            btnAceptar.Visible = true;
-            btnCancelar.Visible = true;
-            lblInstruccion.Visible = true;
-            btnReproducir.Visible = false;
-            btnModificarPlayList.Visible = false;
-            btnCrearPlayList.Visible = false;
+            pnlIngresarNombre.Visible = true;
+            pnlMenuBotones.Visible = false;
+            txtNombrePlayList.Text = "";
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -43,14 +38,11 @@ namespace PresentacionEscritorio
             {
                 GListas.CrearPlayList(IdUsuario, txtNombrePlayList.Text);
 
-                txtNombrePlayList.Visible = false;
-                btnAceptar.Visible = false;
-                btnCancelar.Visible = false;
-                lblInstruccion.Visible = false;
-                btnReproducir.Visible = true;
-                btnModificarPlayList.Visible = true;
-                btnCrearPlayList.Visible = true;
-
+                pnlIngresarNombre.Visible = false;
+                pnlMenuBotones.Visible = true;
+                btnReproducir.Enabled = false;
+                btnModificarPlayList.Enabled = false;
+                btnEliminarPlayList.Enabled = false;
                 ActualizarListasPlayList();
             }
         }
@@ -62,22 +54,19 @@ namespace PresentacionEscritorio
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            txtNombrePlayList.Visible = false;
-            btnAceptar.Visible = false;
-            btnCancelar.Visible = false;
-            lblInstruccion.Visible = false;
-            btnReproducir.Visible = true;
-            btnModificarPlayList.Visible = true;
-            btnCrearPlayList.Visible = true;
+            pnlIngresarNombre.Visible = false;
+            pnlMenuBotones.Visible = true;
+            btnModificarPlayList.Enabled = false;
+            btnReproducir.Enabled = false;
+            btnEliminarPlayList.Enabled = false;
         }
-        public void ActualizarListasPlayList()
+        private void ActualizarListasPlayList()
         {
             lslListasReproduccion.Items.Clear();
-            playLists = GListas.ConsultarNombresPlayLists(IdUsuario);
-            idPlayList = GListas.ConsultarIdPlayLists(IdUsuario);
-            foreach(string nombre in playLists)
+            PlayLists = GListas.ConsultarPlayLists(IdUsuario);
+            foreach(ModeloPlayList play in PlayLists)
             {
-                lslListasReproduccion.Items.Add(nombre);
+                lslListasReproduccion.Items.Add(play.Nombre);
             }
         }
 
@@ -90,9 +79,30 @@ namespace PresentacionEscritorio
         {
             IUMenuListasReproduccion IUMenuListas = new IUMenuListasReproduccion();
             IUMenuListas.IdUsuario = IdUsuario;
-            IUMenuListas.IdPlayListSeleccionada = idPlayList[lslListasReproduccion.SelectedIndex];
+            IUMenuListas.PlayList = PlayLists[lslListasReproduccion.SelectedIndex];
             IUMenuListas.Show();
             this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lslListasReproduccion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnModificarPlayList.Enabled = true;
+            btnReproducir.Enabled = true;
+            btnEliminarPlayList.Enabled = true;
+        }
+
+        private void btnEliminarPlayList_Click(object sender, EventArgs e)
+        {
+            GListas.EliminarPlayList(PlayLists[lslListasReproduccion.SelectedIndex].IdPlayList);
+            btnEliminarPlayList.Enabled = false;
+            btnModificarPlayList.Enabled = false;
+            btnReproducir.Enabled = false;
+            ActualizarListasPlayList();
         }
     }
 }

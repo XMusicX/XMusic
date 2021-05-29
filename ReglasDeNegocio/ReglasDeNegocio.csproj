@@ -48,6 +48,8 @@
     <Compile Include="GestorRegistroArtista.cs" />
     <Compile Include="GestorReproduccion.cs" />
     <Compile Include="GestorSubirCanciones.cs" />
+    <Compile Include="ModeloCancion.cs" />
+    <Compile Include="ModeloPlayList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

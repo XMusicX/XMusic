@@ -35,6 +35,7 @@ namespace PresentacionEscritorio
             this.lblNombrePlayList = new System.Windows.Forms.Label();
             this.btnAgregarCancion = new System.Windows.Forms.Button();
             this.lstCanciones = new System.Windows.Forms.ListBox();
+            this.btnEliminarCancion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnAtras)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@ namespace PresentacionEscritorio
             // 
             this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAtras.Image = global::PresentacionEscritorio.Properties.Resources.Atras;
-            this.btnAtras.Location = new System.Drawing.Point(12, 5);
+            this.btnAtras.Location = new System.Drawing.Point(12, 10);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(54, 50);
             this.btnAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -67,11 +68,11 @@ namespace PresentacionEscritorio
             // lblNombrePlayList
             // 
             this.lblNombrePlayList.AutoSize = true;
-            this.lblNombrePlayList.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombrePlayList.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombrePlayList.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNombrePlayList.Location = new System.Drawing.Point(89, 21);
+            this.lblNombrePlayList.Location = new System.Drawing.Point(81, 18);
             this.lblNombrePlayList.Name = "lblNombrePlayList";
-            this.lblNombrePlayList.Size = new System.Drawing.Size(23, 20);
+            this.lblNombrePlayList.Size = new System.Drawing.Size(39, 34);
             this.lblNombrePlayList.TabIndex = 3;
             this.lblNombrePlayList.Text = "--";
             // 
@@ -93,14 +94,30 @@ namespace PresentacionEscritorio
             // lstCanciones
             // 
             this.lstCanciones.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lstCanciones.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstCanciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lstCanciones.FormattingEnabled = true;
-            this.lstCanciones.ItemHeight = 17;
+            this.lstCanciones.ItemHeight = 21;
             this.lstCanciones.Location = new System.Drawing.Point(13, 72);
             this.lstCanciones.Name = "lstCanciones";
-            this.lstCanciones.Size = new System.Drawing.Size(524, 446);
+            this.lstCanciones.Size = new System.Drawing.Size(524, 445);
             this.lstCanciones.TabIndex = 5;
             this.lstCanciones.SelectedIndexChanged += new System.EventHandler(this.lstCanciones_SelectedIndexChanged);
+            // 
+            // btnEliminarCancion
+            // 
+            this.btnEliminarCancion.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnEliminarCancion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarCancion.Enabled = false;
+            this.btnEliminarCancion.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarCancion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEliminarCancion.Location = new System.Drawing.Point(566, 320);
+            this.btnEliminarCancion.Name = "btnEliminarCancion";
+            this.btnEliminarCancion.Size = new System.Drawing.Size(140, 44);
+            this.btnEliminarCancion.TabIndex = 6;
+            this.btnEliminarCancion.Text = "Eliminar canción";
+            this.btnEliminarCancion.UseVisualStyleBackColor = false;
+            this.btnEliminarCancion.Click += new System.EventHandler(this.btnEliminarCancion_Click);
             // 
             // IUMenuListasReproduccion
             // 
@@ -108,6 +125,7 @@ namespace PresentacionEscritorio
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(726, 543);
+            this.Controls.Add(this.btnEliminarCancion);
             this.Controls.Add(this.lstCanciones);
             this.Controls.Add(this.btnAgregarCancion);
             this.Controls.Add(this.lblNombrePlayList);
@@ -133,5 +151,6 @@ namespace PresentacionEscritorio
         private System.Windows.Forms.Label lblNombrePlayList;
         private System.Windows.Forms.Button btnAgregarCancion;
         private System.Windows.Forms.ListBox lstCanciones;
+        private System.Windows.Forms.Button btnEliminarCancion;
     }
 }

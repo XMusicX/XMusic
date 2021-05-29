@@ -15,29 +15,63 @@ namespace ReglasDeNegocio
         {
             DUsuario.CrearPlayList(idUsuario, nombre);
         }
-        public List<string> ConsultarNombresPlayLists(int idUsuario)
+        
+        public List<ModeloPlayList> ConsultarPlayLists(int idUsuario)
         {
             DataTable resultado = DUsuario.ConsultarPlayList(idUsuario);
-            List<string> playList = new List<string>();
+            List<ModeloPlayList> playLists = new List<ModeloPlayList>();
             foreach (DataRow row in resultado.Rows)
             {
-                playList.Add(row[0].ToString());
+                ModeloPlayList playList = new ModeloPlayList();
+                playList.IdPlayList = Convert.ToInt32(row[1]);
+                playList.IdUsuario = idUsuario;
+                playList.Nombre = row[0].ToString();
+
+                playLists.Add(playList);
             }
-            return playList;
+            return playLists;
         }
-        public List<int> ConsultarIdPlayLists(int idUsuario)
+        public List<ModeloCancion> ConsultarCancionesBD(int idUsuario)
         {
-            DataTable resultado = DUsuario.ConsultarPlayList(idUsuario);
-            List<int> idplayList = new List<int>();
+            DataTable resultado = DUsuario.ConsultarCanciones(idUsuario);
+            List<ModeloCancion> cancionesBD = new List<ModeloCancion>();
             foreach (DataRow row in resultado.Rows)
             {
-                idplayList.Add(Convert.ToInt32(row[1]));
+                ModeloCancion cancion = new ModeloCancion();
+                cancion.IdCancion = Convert.ToInt32(row[2]);
+                cancion.IdUsuario = idUsuario;
+                cancion.Nombre = row[0].ToString();
+                cancion.Ruta = row[1].ToString();
+
+                cancionesBD.Add(cancion);
             }
-            return idplayList;
+            return cancionesBD;
         }
         public void AñadirCancionAPlayList(int idPlayList, int idCancion)
         {
             DUsuario.AñadirCancionAPlayList(idPlayList, idCancion);
+        }
+        public List<ModeloCancion> ConsultarCancionesDePlayList(int idPlayList)
+        {
+            DataTable resultado = DUsuario.ConsultarCancionesPlayList(idPlayList);
+            List<ModeloCancion> Canciones = new List<ModeloCancion>();
+            foreach(DataRow row in resultado.Rows)
+            {
+                ModeloCancion cancion = new ModeloCancion();
+                cancion.IdCancion = Convert.ToInt32(row[0]);
+                cancion.Nombre = row[1].ToString();
+                cancion.Ruta = row[2].ToString();
+                Canciones.Add(cancion);
+            }
+            return Canciones;
+        }
+        public void EliminarPlayList(int idPlayList)
+        {
+            DUsuario.EliminarPlayList(idPlayList);
+        }
+        public void EliminarCancionDePlayList(int idPlayList, int idCancion)
+        {
+            DUsuario.EliminarCancionesDePlayList(idPlayList, idCancion);
         }
     }
 }
