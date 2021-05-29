@@ -108,5 +108,37 @@ namespace AccesoADatosBD
             objCmd.ExecuteNonQuery();
             ObjCn.Close();
         }
+        public void CrearPlayList(int idUsuario, string nombre)
+        {
+            SqlCommand objCmd = new SqlCommand("uspCrearPlayList", ObjCn);
+            objCmd.CommandType = CommandType.StoredProcedure;
+            objCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            objCmd.Parameters.AddWithValue("@Nombre", nombre);
+            ObjCn.Open();
+            objCmd.ExecuteNonQuery();
+            ObjCn.Close();
+        }
+        public DataTable ConsultarPlayList(int idUsuario)
+        {
+            SqlCommand ObjCmd = new SqlCommand("uspConsultarPlayLists", ObjCn);
+            ObjCmd.CommandType = CommandType.StoredProcedure;
+            ObjCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+            ObjCn.Open();
+            SqlDataReader Dr = ObjCmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(Dr);
+            ObjCn.Close();
+            return dt;
+        }
+        public void AñadirCancionAPlayList(int idPlayList, int idCancion)
+        {
+            SqlCommand objCmd = new SqlCommand("uspAñadirCancionAPlayList", ObjCn);
+            objCmd.CommandType = CommandType.StoredProcedure;
+            objCmd.Parameters.AddWithValue("@IdPlayList", idPlayList);
+            objCmd.Parameters.AddWithValue("@IdCancion", idCancion);
+            ObjCn.Open();
+            objCmd.ExecuteNonQuery();
+            ObjCn.Close();
+        }
     }
 }

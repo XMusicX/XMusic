@@ -13,7 +13,6 @@ namespace PresentacionEscritorio
 {
     public partial class IUActualizarCuenta : Form
     {
-        string NombreArtista;
         public int IdUsuario;
         public IUActualizarCuenta()
         {

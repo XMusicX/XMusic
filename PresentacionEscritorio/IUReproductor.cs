@@ -100,10 +100,17 @@ namespace PresentacionEscritorio
 
         private void lstCanciones_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];            
-            lblNombreCancion.Text = ArchivosMP3[lstCanciones.SelectedIndex];        
-            btnReproducir.Image = Properties.Resources.btnPause;
-            Play = true;
+            try
+            {
+                Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+                lblNombreCancion.Text = ArchivosMP3[lstCanciones.SelectedIndex];
+                btnReproducir.Image = Properties.Resources.btnPause;
+                Play = true;
+            }
+            catch 
+            {
+                
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -264,6 +271,14 @@ namespace PresentacionEscritorio
             IUMiPerfil MiPerfil = new IUMiPerfil();
             MiPerfil.IdUsuario = IdUsuario;
             MiPerfil.Visible = true;
+        }
+
+        private void btnPlaylist_Click(object sender, EventArgs e)
+        {
+            IUListasReproduccion IUListas = new IUListasReproduccion();
+            IUListas.Show();
+            IUListas.IdUsuario = IdUsuario;
+            IUListas.ActualizarListasPlayList();
         }
     }
 }

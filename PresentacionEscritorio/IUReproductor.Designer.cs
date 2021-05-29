@@ -176,6 +176,7 @@ namespace PresentacionEscritorio
             this.btnPlaylist.TabIndex = 14;
             this.btnPlaylist.Text = "Mis Playlist";
             this.btnPlaylist.UseVisualStyleBackColor = false;
+            this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
             // 
             // Reproductor
             // 

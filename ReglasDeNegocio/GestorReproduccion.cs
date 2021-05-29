@@ -33,5 +33,16 @@ namespace ReglasDeNegocio
             }
             return rutasCanciones;
         }
+        public List<int> ConsultarIDCanciones(int idUsuario)
+        {
+            List<int> idCanciones = new List<int>();
+            DataTable ResultadoCanciones = DUsusario.ConsultarCanciones(idUsuario);
+
+            foreach (DataRow row in ResultadoCanciones.Rows)
+            {
+                idCanciones.Add(Convert.ToInt32(row[2]));
+            }
+            return idCanciones;
+        }
     }
 }
