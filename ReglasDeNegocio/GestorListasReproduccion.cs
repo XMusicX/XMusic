@@ -26,6 +26,7 @@ namespace ReglasDeNegocio
                 playList.IdPlayList = Convert.ToInt32(row[1]);
                 playList.IdUsuario = idUsuario;
                 playList.Nombre = row[0].ToString();
+                playList.Canciones = ConsultarCancionesDePlayList(playList.IdPlayList);
 
                 playLists.Add(playList);
             }

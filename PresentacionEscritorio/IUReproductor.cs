@@ -18,10 +18,13 @@ namespace PresentacionEscritorio
         bool Mute = false;
         int CancionAnterior;
 
-        List<string> ArchivosMP3;
-        List<string> RutasArchivosMP3;
+        List<string> ArchivosMP3 = new List<string>();
+        List<string> RutasArchivosMP3 = new List<string>();
+        List<int> IdArchivosMP3 = new List<int>();
 
         public int IdUsuario;
+        IUListasReproduccion IUListas = new IUListasReproduccion();
+
         public IUReproductor()
         {
             InitializeComponent();
@@ -151,8 +154,6 @@ namespace PresentacionEscritorio
                     timer1.Stop();
                     break;
             }
-                
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -169,49 +170,62 @@ namespace PresentacionEscritorio
 
         private void btnCancionSiguiente_Click(object sender, EventArgs e)
         {
-
-            if (Random == false)
+            try
             {
-                if (lstCanciones.SelectedIndex != RutasArchivosMP3.Count() - 1)
+                if (Random == false)
                 {
-                    lstCanciones.SelectedIndex += 1;
-                    Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+                    if (lstCanciones.SelectedIndex != RutasArchivosMP3.Count() - 1)
+                    {
+                        lstCanciones.SelectedIndex += 1;
+                        Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
 
+                    }
+                    else
+                    {
+                        lstCanciones.SelectedIndex = 0;
+                        Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+                    }
                 }
                 else
                 {
-                    lstCanciones.SelectedIndex = 0;
+                    CancionAnterior = lstCanciones.SelectedIndex;
+                    Random r = new Random();
+                    lstCanciones.SelectedIndex = r.Next(0, RutasArchivosMP3.Count());
                     Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
                 }
             }
-            else
+            catch
             {
-                CancionAnterior = lstCanciones.SelectedIndex;
-                Random r = new Random();
-                lstCanciones.SelectedIndex = r.Next(0, RutasArchivosMP3.Count());
-                Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+
             }
         }
 
         private void btnCancionAnterior_Click(object sender, EventArgs e)
         {
-            if (Random == false)
+            try
             {
-                if (lstCanciones.SelectedIndex != 0)
+                if (Random == false)
                 {
-                    lstCanciones.SelectedIndex -= 1;
-                    Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+                    if (lstCanciones.SelectedIndex != 0)
+                    {
+                        lstCanciones.SelectedIndex -= 1;
+                        Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+                    }
+                    else
+                    {
+                        lstCanciones.SelectedIndex = RutasArchivosMP3.Count() - 1;
+                        Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+                    }
                 }
                 else
                 {
-                    lstCanciones.SelectedIndex = RutasArchivosMP3.Count() - 1;
+                    lstCanciones.SelectedIndex = CancionAnterior;
                     Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
                 }
             }
-            else
+            catch
             {
-                lstCanciones.SelectedIndex = CancionAnterior;
-                Reproductor.URL = RutasArchivosMP3[lstCanciones.SelectedIndex];
+
             }
         }
 
@@ -248,15 +262,20 @@ namespace PresentacionEscritorio
                     break;
             }
         }
-
-        private void IUReproductor_Load(object sender, EventArgs e)
+        private void ActualizarCancionesBD()
         {
+            ArchivosMP3.Clear();
+            RutasArchivosMP3.Clear();
+            IdArchivosMP3.Clear();
+            lstCanciones.Items.Clear();
             GestorReproduccion GRep = new GestorReproduccion();
             List<string> NombresCancioes = new List<string>();
             List<string> RutasCanciones = new List<string>();
+            List<int> IdCanciones = new List<int>();
 
             NombresCancioes = GRep.ConsultarNombresCanciones(IdUsuario);
             RutasCanciones = GRep.ConsultarRutasCanciones(IdUsuario);
+            IdCanciones = GRep.ConsultarIDCanciones(IdUsuario);
 
             foreach (string nombre in NombresCancioes)
             {
@@ -264,6 +283,13 @@ namespace PresentacionEscritorio
             }
             ArchivosMP3 = NombresCancioes;
             RutasArchivosMP3 = RutasCanciones;
+            IdArchivosMP3 = IdCanciones;
+            btnEliminarCancion.Enabled = true;
+            lblListaCanciones.Text = "Canciones agregadas";
+        }
+        private void IUReproductor_Load(object sender, EventArgs e)
+        {
+            ActualizarCancionesBD();
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -275,9 +301,48 @@ namespace PresentacionEscritorio
 
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
-            IUListasReproduccion IUListas = new IUListasReproduccion();            
             IUListas.IdUsuario = IdUsuario;
             IUListas.Show();
+        }
+        private void ActualizarCancionesReproducir(List<ModeloCancion> canciones)
+        {
+            ArchivosMP3.Clear();
+            RutasArchivosMP3.Clear();
+            lstCanciones.Items.Clear();
+            foreach (ModeloCancion cancion in canciones)
+            {
+                lstCanciones.Items.Add(cancion.Nombre);
+                ArchivosMP3.Add(cancion.Nombre);
+                RutasArchivosMP3.Add(cancion.Ruta);
+            }
+            btnSubirCancion.Enabled = false;
+            btnEliminarCancion.Enabled = false;
+        }
+        public void RecibirPlayListReproducir(ModeloPlayList playList)
+        {
+            lblListaCanciones.Text = playList.Nombre;
+            ActualizarCancionesReproducir(playList.Canciones);
+        }
+
+        private void IUReproductor_Activated(object sender, EventArgs e)
+        {
+            if (IUListas.QuiereReproducir())
+            {
+                RecibirPlayListReproducir(IUListas.ObtenerListaReproducir());
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            btnSubirCancion.Enabled = true;
+            ActualizarCancionesBD();
+        }
+
+        private void btnEliminarCancion_Click(object sender, EventArgs e)
+        {
+            GestorReproduccion Grep = new GestorReproduccion();
+            Grep.EliminarCancion(IdArchivosMP3[lstCanciones.SelectedIndex]);
+            ActualizarCancionesBD();
         }
     }
 }

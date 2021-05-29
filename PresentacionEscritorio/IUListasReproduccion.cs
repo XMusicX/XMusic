@@ -16,6 +16,8 @@ namespace PresentacionEscritorio
         public int IdUsuario;
         GestorListasReproduccion GListas = new GestorListasReproduccion();
         List<ModeloPlayList> PlayLists = new List<ModeloPlayList>();
+        bool Reproducir = false;
+        int indicePlayListReproducir;
         public IUListasReproduccion()
         {
             InitializeComponent();
@@ -49,7 +51,7 @@ namespace PresentacionEscritorio
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Visible = false;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -81,7 +83,7 @@ namespace PresentacionEscritorio
             IUMenuListas.IdUsuario = IdUsuario;
             IUMenuListas.PlayList = PlayLists[lslListasReproduccion.SelectedIndex];
             IUMenuListas.Show();
-            this.Close();
+            this.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -103,6 +105,23 @@ namespace PresentacionEscritorio
             btnModificarPlayList.Enabled = false;
             btnReproducir.Enabled = false;
             ActualizarListasPlayList();
+        }
+
+        private void btnReproducir_Click(object sender, EventArgs e)
+        {
+            Reproducir = true;
+            indicePlayListReproducir = lslListasReproduccion.SelectedIndex;
+            ActualizarListasPlayList();
+            IUReproductor.ActiveForm.Activate();
+            this.Visible = false;
+        }
+        public bool QuiereReproducir()
+        {
+            return Reproducir;
+        }
+        public ModeloPlayList ObtenerListaReproducir()
+        {
+            return PlayLists[indicePlayListReproducir];
         }
     }
 }

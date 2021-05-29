@@ -44,5 +44,9 @@ namespace ReglasDeNegocio
             }
             return idCanciones;
         }
+        public void EliminarCancion(int idCancion)
+        {
+            DUsusario.EliminarCancion(idCancion);
+        }
     }
 }

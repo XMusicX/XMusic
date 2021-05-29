@@ -41,8 +41,8 @@ namespace PresentacionEscritorio
             this.lblInstruccion = new System.Windows.Forms.Label();
             this.pnlIngresarNombre = new System.Windows.Forms.Panel();
             this.pnlMenuBotones = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnEliminarPlayList = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
             this.pnlIngresarNombre.SuspendLayout();
@@ -90,6 +90,7 @@ namespace PresentacionEscritorio
             this.btnReproducir.TabIndex = 2;
             this.btnReproducir.Text = "Reproducir";
             this.btnReproducir.UseVisualStyleBackColor = false;
+            this.btnReproducir.Click += new System.EventHandler(this.btnReproducir_Click);
             // 
             // btnAtras
             // 
@@ -184,16 +185,6 @@ namespace PresentacionEscritorio
             this.pnlMenuBotones.Size = new System.Drawing.Size(200, 354);
             this.pnlMenuBotones.TabIndex = 10;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 34);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Tus Play List";
-            // 
             // btnEliminarPlayList
             // 
             this.btnEliminarPlayList.BackColor = System.Drawing.Color.MediumBlue;
@@ -208,6 +199,16 @@ namespace PresentacionEscritorio
             this.btnEliminarPlayList.Text = "Eliminar";
             this.btnEliminarPlayList.UseVisualStyleBackColor = false;
             this.btnEliminarPlayList.Click += new System.EventHandler(this.btnEliminarPlayList_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(73, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 34);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Tus Play List";
             // 
             // IUListasReproduccion
             // 

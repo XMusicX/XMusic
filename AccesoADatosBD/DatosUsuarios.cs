@@ -171,5 +171,14 @@ namespace AccesoADatosBD
             objCmd.ExecuteNonQuery();
             ObjCn.Close();
         }
+        public void EliminarCancion(int idCancion)
+        {
+            SqlCommand objCmd = new SqlCommand("uspEliminarCancion", ObjCn);
+            objCmd.CommandType = CommandType.StoredProcedure;
+            objCmd.Parameters.AddWithValue("@IdCancion", idCancion);
+            ObjCn.Open();
+            objCmd.ExecuteNonQuery();
+            ObjCn.Close();
+        }
     }
 }
