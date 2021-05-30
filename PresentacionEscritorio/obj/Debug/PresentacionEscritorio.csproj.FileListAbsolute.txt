@@ -74,3 +74,34 @@ C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\Presen
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUListasReproduccion.resources
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUMenuListasReproduccion.resources
 C:\Users\Miguel Mena\source\repos\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUSubirCanciones.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe.config
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.exe
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\PresentacionEscritorio.pdb
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\MACTrackBarLib.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosLocales.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\ReglasDeNegocio.pdb
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosBD.pdb
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\AccesoADatosLocales.pdb
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\Interop.WMPLib.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\bin\Debug\AxInterop.WMPLib.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csprojAssemblyReference.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\Interop.WMPLib.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\AxInterop.WMPLib.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.ResolveComReference.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUActualizarCuenta.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUInicioSesion.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUListasReproduccion.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUMenuListasReproduccion.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUMiPerfil.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURecuperarContraseña.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IURegistroUsuario.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUReproductor.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.IUSubirCanciones.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.Properties.Resources.resources
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.GenerateResource.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CoreCompileInputs.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.csproj.CopyComplete
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.exe
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\PresentacionEscritorio\obj\Debug\PresentacionEscritorio.pdb

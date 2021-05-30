@@ -19,3 +19,12 @@ C:\Users\xXjja\OneDrive\Escritorio\XMusic\AccesoADatosLocales\obj\Debug\AccesoAD
 C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosBD.dll
 C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosBD.pdb
 C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CopyComplete
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosLocales.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosLocales.pdb
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosBD.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\bin\Debug\AccesoADatosBD.pdb
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csprojAssemblyReference.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CoreCompileInputs.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.csproj.CopyComplete
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosLocales\obj\Debug\AccesoADatosLocales.pdb

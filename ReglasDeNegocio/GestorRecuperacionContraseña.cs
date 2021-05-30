@@ -21,10 +21,13 @@ namespace ReglasDeNegocio
                 .ToArray());
             DatosUsuarios du = new DatosUsuarios();
             du.GuardarToken(correo, token);
-            return EnviarCorreo(correo, token);
+            Thread t = new Thread(() => EnviarCorreo(correo, token));
+            t.Start();
+            return "Se enviara un codigo al correo electrónico";
+           
         }
 
-        private string EnviarCorreo(string correo, string token)
+        private void EnviarCorreo(string correo, string token)
         {
             string salida = "";
             System.Net.Mail.MailMessage msg = new System.Net.Mail.MailMessage();
@@ -37,7 +40,7 @@ namespace ReglasDeNegocio
             msg.From = new System.Net.Mail.MailAddress("dpiedrahita@ulasallista.edu.co");
 
             System.Net.Mail.SmtpClient cliente = new System.Net.Mail.SmtpClient();
-            cliente.Credentials = new System.Net.NetworkCredential("dpiedrahita@ulasallista.edu.co", "Edison2020*");
+            cliente.Credentials = new System.Net.NetworkCredential("dpiedrahita@ulasallista.edu.co", "Pipe2017.");
             cliente.Port = 587;
             cliente.EnableSsl = true;
             cliente.Host = "smtp.office365.com";
@@ -52,7 +55,6 @@ namespace ReglasDeNegocio
                 salida = "Error al enviar código al correo electrónico";
             }
 
-            return salida;
         }
 
         public void RecuperarContraseña(string correo, string contraseña, string token)

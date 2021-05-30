@@ -25,3 +25,18 @@ C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosBD\bin\Debug\System.Securit
 C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosBD\bin\Debug\System.Security.Permissions.xml
 C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosBD\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Miguel Mena\source\repos\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.csproj.CopyComplete
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\AccesoADatosBD.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\AccesoADatosBD.pdb
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Security.AccessControl.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Security.Permissions.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Security.Principal.Windows.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Security.AccessControl.xml
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Security.Permissions.xml
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\bin\Debug\System.Security.Principal.Windows.xml
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.csprojAssemblyReference.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.csproj.CoreCompileInputs.cache
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.csproj.CopyComplete
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.dll
+D:\Universidad\Ingeniería del software\xmusic3\XMusic\AccesoADatosBD\obj\Debug\AccesoADatosBD.pdb
